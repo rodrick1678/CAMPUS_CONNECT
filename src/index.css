@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  /* Add subtle shopette-like colors if needed */
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #0b0a0a;
+  color: #ffffff;
+}
