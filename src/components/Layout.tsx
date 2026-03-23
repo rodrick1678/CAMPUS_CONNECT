@@ -2,7 +2,7 @@ import { type ReactNode } from 'react';
 import { Sidebar } from './Sidebar';
 import { BottomBar } from './BottomBar';
 import { AuthModal } from './AuthModal';
-import { useMockData } from '../contexts/MockDataContext';
+import { useMockData } from '../contexts/MockData';
 
 export const Layout = ({ children }: { children: ReactNode }) => {
   const { isLoggedIn } = useMockData();

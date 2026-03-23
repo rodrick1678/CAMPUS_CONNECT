@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { useMockData } from '../contexts/MockDataContext';
+import { useMockData } from '../contexts/MockData';
 
 export const AuthModal = () => {
-  const { isLoggedIn, setIsLoggedIn } = useMockData();
+  const { isLoggedIn, login } = useMockData();
   const [email, setEmail] = useState('');
 
   if (isLoggedIn) return null;
@@ -18,7 +18,7 @@ export const AuthModal = () => {
           <p className="text-gray-400 text-sm">Sign in to access your campus</p>
         </div>
         
-        <form className="flex flex-col gap-4" onSubmit={(e) => { e.preventDefault(); setIsLoggedIn(true); }}>
+        <form className="flex flex-col gap-4" onSubmit={(e) => { e.preventDefault(); login('u1'); }}>
           <div className="flex flex-col gap-2">
             <label className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Email</label>
             <input 

@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { Home, Location, Inbox, Profile, PostDetail } from './pages';
 import { Layout } from './components/Layout';
-import { MockDataProvider } from './contexts/MockDataContext';
+import { MockDataProvider } from './contexts/MockData';
 
 function App() {
   return (
